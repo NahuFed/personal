@@ -1,171 +1,778 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/pesonal.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Fibertel ahora es Personal</title>
+</head>
+<body>
+    <header >
+        <div class="row  p-2 d-flex">
+            <div class="col-6">
+                <div class="d-flex">
+                    <span class="ms-5 text-white">Personal</span>
+                    <a href="https://www.flow.com.ar/" class="no-style ms-5">Flow</a>
+                </div>
+            </div>
+            <div class="col-6 ms-6 justify-content-end">
+                <div class="head d-flex justify-content-end">
+                    <a href="#"><img src="./assets/img/tv-green.png" alt=""></a>
+                    <span class="mx-4 text-white">|</span>
+                    <a href="#" class="no-style me-5"><img src="./assets/img/circle-black.png" alt="user circle"> Mi Cuenta</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!--Navbar-->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h5 class="text-white h4">Collapsed content</h5>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="dropdown"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <div class="d-flex justify-content-between mx-auto w-75 align-content-end">
+                        <div>
+                            <!-- <span class="mx-4">Menú |</span> -->
+                            <p class="text-white mt-4">Menú | Estás en Capital Federal</p>
+                        </div>
+                        <div>
+                            <h1 class="text-white">personal</h1>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://www.personalpay.com.ar/" class="no-style">Descubrí Personal Pay</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </header>
     <main>
+        <nav class="navbar bg-body-tertiary ">
+            <div class="navbar-container">
+                <a class="navbar-brand " href="https://www.personal.com.ar/ofertas?icn=combos&ici=home_quicklinks">              
+                    <i class="fa-solid fa-bag-shopping light-color"></i>
+                    <p>Combos</p>
+                </a>
+                <a class="navbar-brand" href="https://tienda.personal.com.ar/?icn=tienda&ici=home_quicklinks">
+                   <i class="fa-solid fa-cart-shopping light-color"></i>
+                    <p>Tienda</p>
+                </a>
+                <a class="navbar-brand" href="https://www.personal.com.ar/internet?icn=internet&ici=home_quicklinks">             
+                    <i class="fa-solid fa-wifi light-color"></i>
+                    <p>Internet</p>
+                </a>
+                <a class="navbar-brand" href="https://www.personal.com.ar/planes-packs?icn=planes&ici=home_quicklinks">              
+                    <i class="fa-solid fa-file-powerpoint"></i>
+                    <p>Planes</p>
+                </a>
+                <a class="navbar-brand" href="https://www.personal.com.ar/portabilidad?icn=portabilidad&ici=home_quicklinks">
+                    <i class="fa-solid fa-sim-card light-color"></i>
+                    <p>Portabilidad</p>
+                </a>
+                <a class="navbar-brand" href="https://entretenimiento.flow.com.ar/tv-cable?icn=tv&ici=home_quicklinks&_ga=2.51777518.672411379.1675888010-1211113727.1675888010">
+                    <img src="./images/vc-tv-streaming.svg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top light-color">
+                    <p>TV y Streaming</p>
+                   
+                </a>
+            </div>
+        </nav>
 
-      <div class="contenedor-carrusel">
+
+
+        <div class="contenedor-carrusel">
 
       
-      <h2 class="text-center">Potenciá tu conectividad con Personal</h2>
-      <p class="text-center pb-4">Encontrá combos de internet, telefonía móvil y TV</p>
-
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark slide"        
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
-        <div class="carousel-inner container">
-          <div class="carousel-item active">
-            <div class="row gap-5 justify-content-center">
-                <div class="card col-3" id="card_1">
-                  <div class="card-header mt-4 pb-0">BENEFICIO EXCLUSIVO PREVENTA</div>
-                  <div class="card-body bg-bl">
-                    <h5 class="card-title">Samsung Galaxy S23 Series</h5>
-                    <p class="card-text">
-                    Aprovecha 20% OFF por ser Conexion Total
-                    </p>
+            <h2 class="text-center">Potenciá tu conectividad con Personal</h2>
+            <p class="text-center pb-4">Encontrá combos de internet, telefonía móvil y TV</p>
+      
+            <div
+              id="carouselExampleDark"
+              class="carousel carousel-dark slide"        
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner container">
+                <div class="carousel-item active">
+                  <div class="row gap-5 justify-content-center">
+                      <div class="card col-3" id="card_1">
+                        <div class="card-header mt-4 pb-0">BENEFICIO EXCLUSIVO PREVENTA</div>
+                        <div class="card-body bg-bl">
+                          <h5 class="card-title">Samsung Galaxy S23 Series</h5>
+                          <p class="card-text">
+                          Aprovecha 20% OFF por ser Conexion Total
+                          </p>
+                        </div>
+                        <div class="card-footer ">
+                          <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ir a la Tienda</a>
+                        </div>
+                      </div>
+                      <div class="card col-3" id="card_2">
+                        <div class="card-header mt-4 pb-0">DESCUENTOS EXCLUSIVOS CONEXIÓN TOTAL
+                        </div>
+                        <div class="card-body bg-bl">
+                          <h5 class="card-title">Hasta 10% OFF en productos seleccionados
+      
+                          </h5>
+                          <p class="card-text">
+                            Llevalos en hasta 6 cuotas sin interés
+                          </p>
+                        </div>
+                        <div class="card-footer ">
+                          <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ir a la Tienda</a>
+                        </div>
+                      </div>
+                      <div class="card col-3" id="card_3">
+                        <div class="card-header mt-4 pb-0">SI TENÉS PERSONAL EN TU CELU O TE PASÁS                  </div>
+                        <div class="card-body bg-bl">
+                          <h5 class="card-title">Conectá todos tus dispositivos con Internet 300 MB por $2.490                    </h5>
+                          <p class="card-text">
+                            Y duplicá todos los meses los gigas de tu línea móvil                    </p>
+                        </div>
+                        <div class="card-footer ">
+                          <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">¡Lo quiero!</a>
+                        </div>
+                      </div>
+      
                   </div>
-                  <div class="card-footer ">
-                    <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ir a la Tienda</a>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row gap-5 justify-content-center">
+                      <div class="card col-3" id="card_4">
+                        <div class="card-header mt-4 pb-0">POR TENER PERSONAL EN TU CASA Y EN TU CELU</div>
+                        <div class="card-body bg-bl">
+                          <h5 class="card-title">Duplicá todos los meses los gigas de tu plan</h5>
+      
+                        </div>
+                        <div class="card-footer ">
+                          <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ver oferta</a>
+                        </div>
+                      </div>
+                      <div class="card col-3" id="card_1">
+                        <div class="card-header mt-4 pb-0">BENEFICIO EXCLUSIVO PREVENTA</div>
+                        <div class="card-body bg-bl">
+                          <h5 class="card-title">Samsung Galaxy S23 Series</h5>
+                          <p class="card-text">
+                          Aprovecha 20% OFF por ser Conexion Total
+                          </p>
+                        </div>
+                        <div class="card-footer ">
+                          <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ir a la Tienda</a>
+                        </div>                  
+                      </div>
+                      <div class="card col-3" id="card_2">
+                        <div class="card-header mt-4 pb-0">DESCUENTOS EXCLUSIVOS CONEXIÓN TOTAL
+                        </div>
+                        <div class="card-body bg-bl">
+                          <h5 class="card-title">Hasta 10% OFF en productos seleccionados
+      
+                          </h5>
+                          <p class="card-text">
+                            Llevalos en hasta 6 cuotas sin interés
+                          </p>
+                        </div>
+                        <div class="card-footer ">
+                          <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ir a la Tienda</a>
+                        </div>
+                      </div>
                   </div>
                 </div>
-                <div class="card col-3" id="card_2">
-                  <div class="card-header mt-4 pb-0">DESCUENTOS EXCLUSIVOS CONEXIÓN TOTAL
-                  </div>
-                  <div class="card-body bg-bl">
-                    <h5 class="card-title">Hasta 10% OFF en productos seleccionados
-
-                    </h5>
-                    <p class="card-text">
-                      Llevalos en hasta 6 cuotas sin interés
-                    </p>
-                  </div>
-                  <div class="card-footer ">
-                    <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ir a la Tienda</a>
-                  </div>
-                </div>
-                <div class="card col-3" id="card_3">
-                  <div class="card-header mt-4 pb-0">SI TENÉS PERSONAL EN TU CELU O TE PASÁS                  </div>
-                  <div class="card-body bg-bl">
-                    <h5 class="card-title">Conectá todos tus dispositivos con Internet 300 MB por $2.490                    </h5>
-                    <p class="card-text">
-                      Y duplicá todos los meses los gigas de tu línea móvil                    </p>
-                  </div>
-                  <div class="card-footer ">
-                    <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">¡Lo quiero!</a>
-                  </div>
-                </div>
-
-            </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row gap-5 justify-content-center">
-                <div class="card col-3" id="card_4">
-                  <div class="card-header mt-4 pb-0">POR TENER PERSONAL EN TU CASA Y EN TU CELU</div>
-                  <div class="card-body bg-bl">
-                    <h5 class="card-title">Duplicá todos los meses los gigas de tu plan</h5>
-
-                  </div>
-                  <div class="card-footer ">
-                    <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ver oferta</a>
-                  </div>
-                </div>
-                <div class="card col-3" id="card_1">
-                  <div class="card-header mt-4 pb-0">BENEFICIO EXCLUSIVO PREVENTA</div>
-                  <div class="card-body bg-bl">
-                    <h5 class="card-title">Samsung Galaxy S23 Series</h5>
-                    <p class="card-text">
-                    Aprovecha 20% OFF por ser Conexion Total
-                    </p>
-                  </div>
-                  <div class="card-footer ">
-                    <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ir a la Tienda</a>
-                  </div>                  
-                </div>
-                <div class="card col-3" id="card_2">
-                  <div class="card-header mt-4 pb-0">DESCUENTOS EXCLUSIVOS CONEXIÓN TOTAL
-                  </div>
-                  <div class="card-body bg-bl">
-                    <h5 class="card-title">Hasta 10% OFF en productos seleccionados
-
-                    </h5>
-                    <p class="card-text">
-                      Llevalos en hasta 6 cuotas sin interés
-                    </p>
-                  </div>
-                  <div class="card-footer ">
-                    <a href="#" class="btn bg-white text-black border border-1 border-dark rounded-2 px-4 py-2 mb-4">Ir a la Tienda</a>
-                  </div>
-                </div>
+                </div>        
+      
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          </div>        
 
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+
+        <section class="mx-4 pt-4">
+            <div class="d-flex justify-content-between pb-2 align-items-end">
+                <div>
+                    <h2 class="fw-light fs-3">Viví una experiencia ilimitada con nuestros combos</h2>
+                </div>
+                <div>
+                    <a class="fs-6 text-dark a-hover" href="">Ver combos</a>
+                </div>
+            </div>
+            <div class="mx-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text fs-5 fw-ligth">Internet 300 MB</p>
+                                <h5 class="card-title fs-4">$ 2.490 <span class="fs-7 fw-ligther">final por mes</span></h5>
+                                <p class="card-text  c-grey fs-7 pb-4">Precio de lista <span
+                                        class="text-decoration-line-through">$ 8.575</span></p>
+                                <a href="#" class="btn btn-fibertel d-grid gap-2 p-2">¡Lo quiero!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text fs-5 fw-ligth">Internet 100 MB + Flow Full</p>
+                                <h5 class="card-title fs-4">$ 4.790 <span class="fs-7 fw-ligther">final por mes</span></h5>
+                                <p class="card-text c-grey fs-7 pb-4">Precio de lista <span
+                                        class="text-decoration-line-through">$ 11.190</span></p>
+                                <a href="#" class="btn btn-fibertel d-grid gap-2 p-2">¡Lo quiero!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text fs-5 fw-ligth">Móvil 5 GB</p>
+                                <h5 class="card-title fs-4">$ 1.900 <span class="fs-7 fw-ligther">final por mes</span></h5>
+                                <p class="card-text  c-grey fs-7 pb-4">Precio de lista <span
+                                        class="text-decoration-line-through">$ 5.300</span></p>
+                                <a href="#" class="btn btn-fibertel d-grid gap-2 p-2">¡Lo quiero!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <div class="container bg-secondary-subtle px-3 py-3">
+            <div class="container">
+                <div>
+                    <h3 class="h3-type text-dark-emphasis">Gestioná tus servicios</h3>
+                </div>
+                <div>
+                    <p class="text-dark-emphasis"><b>Si ya sos Personal</b>, realizá gestiones desde donde quieras</p>
+                </div>
+            </div>
+            <div class="container bg-body-secondary bg-opacity-50 px-3 py-3 rounded-1">
+                <div class="row d-fex flex-row justify-content-between">
+                    <div class="col  bg-secondary-subtle px-2 py-2 m-2 rounded-2">
+                        <div clas="row">
+                            <a
+                                href="https://idpsesion.telecom.com.ar/openam/XUI/?realm=/convergente&goto=https://idpsesion.telecom.com.ar:443/openam/oauth2/convergente/authorize?response_type%3Dcode%26client_id%3D53f82c04c807dd8743abfa0e2452ba46%26scope%3Dopenid%2520profile%26redirect_uri%3Dhttps://mipersonal.personal.com.ar/facturacion%26code_challenge%3Dg8u_vKOlfR-1mInwCmDjNRYbUOtXFxjZ8LXQ2ovdU0Y%26code_challenge_method%3DS256#login/">
+                                <img src="./assets/img/factura.png" width="20px" height="auto" class="opacity-75">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p class="text-dark-emphasis">Ver mis facturas</p>
+                        </div>
+                    </div>
+                    <div class="col  bg-secondary-subtle px-2 py-2 m-2 rounded-1">
+                        <div clas="row">
+                            <a
+                                href="https://idpsesion.telecom.com.ar/openam/XUI/?realm=/convergente&goto=https://idpsesion.telecom.com.ar:443/openam/oauth2/convergente/authorize?response_type%3Dcode%26client_id%3D53f82c04c807dd8743abfa0e2452ba46%26scope%3Dopenid%2520profile%26redirect_uri%3Dhttps://mipersonal.personal.com.ar/facturacion%26code_challenge%3Dg8u_vKOlfR-1mInwCmDjNRYbUOtXFxjZ8LXQ2ovdU0Y%26code_challenge_method%3DS256#login/"><img
+                                    src="./assets/img/nube.png" width="30px" height="auto" class="opacity-75">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p class="text-dark-emphasis">Mejorar mi plan</p>
+                        </div>
+                    </div>
+                    <div class="col  bg-secondary-subtle px-2 py-2 m-2 rounded-1">
+                        <div clas="row">
+                            <a
+                                href="https://pagos.telecom.com.ar/pages/init?_ga=2.165056639.1532879268.1675887889-1539581434.1651882895"><img
+                                    src="./assets/img/casa.png" width="30px" height="auto" class="opacity-75">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p class="text-dark-emphasis">Pagar desde casa</p>
+                        </div>
+                    </div>
+                    <div class="col  bg-secondary-subtle px-2 py-2 m-2 rounded-1 ">
+                        <div clas="row">
+                            <a href="https://recarga.personal.com.ar/pages/phone"><img src="./assets/img/recargar.png"
+                                    width="30px" height="auto" class="opacity-75">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p class="text-dark-emphasis">Recargar crédito</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Parte 6 Vanina -->
+    <div class="container">
+        <p class="fs-4">Descubrí</p>
+        <div class="card-group gap-3" >
+            <div class="card border-0">
+                <a href="https://www.flow.com.ar/flow-flex?icn=Flow-Flex&ici=home_cards_lanzamientos&_ga=2.34115873.1033699086.1675893787-1367928899.1675893787">
+              <img src="./asset/image1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                </a>
+              </div>
+            </div>
+            <div class="card border-0">
+                <a href="https://www.personal.com.ar/conexion-y-entretenimiento?icn=conexion-total&ici=home_cards_lanzamientos">
+              <img src="./asset/image2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+             </a>
+              </div>
+            </div>
+            <div class="card border-0">
+                <a href="https://www.personal.com.ar/wifi-pass?icn=Wifi-Pass&ici=home_cards_lanzamientos">
+              <img src="./asset/image3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+            </a>
+              </div>
+            </div>
+          </div>
     </div>
+    <!-- fin parte 6 Vanina -->
+    <div class="container">
+        <h4 class="fw-light my-3">Con Personal tenés más beneficios</h4>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 d-flex flex-wrap">
+            <div class="col">
+                <div id="beneficios-card" class="card p-3">
+                    <img id="beneficios-img" class="card-img" src="images/vincula-tus-servicios.png" alt="vincula-tus-servicios">
+                    <div class="card-body p-0">
+                        <p class="mb-1"><span id="beneficios-span">-$800</span> de ahorro</p>
+                        <p class="card-title mb-4" id="beneficios-card-title">Si tenés Internet y Línea Móvil</p>
+                        <p class="card-text mb-5" id="beneficios-card-text">Por tener Conexión Total, ahorrá $800 en tu factura de internet. Además, sumá $200 extra por cada linea móvil que agregues.</p>
+                        <p class="card-text mb-0"><small>Válido por tener Internet y Línea Móvil mensual</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="beneficios-card" class="card p-3 m-0">
+                    <img id="beneficios-img" class="card-img" src="images/box-img.png" alt="box">
+                    <div class="card-body p-0">
+                        <p class="mb-1"><span id="beneficios-span">%10</span> de descuento</p>
+                        <p class="card-title mb-4" id="beneficios-card-title">En Tienda Personal</p>
+                        <p class="card-text mb-4" id="beneficios-card-text">Si tenés contratada una linea Personal más un servicio de TV o Internet, accedés a un %10 de descuento para utilizar en Tienda Personal.</p>
+                        <p class="card-text pt-1 mb-0"><small>Por tener Línea Móvil mensual más Internet o Flow</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="beneficios-card" class="card p-3 m-0">
+                    <img id="beneficios-img" class="card-img" src="images/pay.png" alt="pay">
+                    <div class="card-body p-0">
+                        <p class="mb-1"><span id="beneficios-span">%20</span> de reintegro</p>
+                        <p class="card-title mb-4" id="beneficios-card-title">Comprando en Tienda Personal</p>
+                        <p class="card-text mb-5" id="beneficios-card-text">Pagá con Visa Prepaga Personal Pay en Tienda Personal y obtené hasta un %20 de reintegro con $10.000 de tope.</p>
+                        <p class="card-text mb-0 pb-4"><small>Compra máxima $440.000</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="beneficios-card" class="card p-3 m-0">
+                    <img id="beneficios-img" class="card-img" src="images/pay.png" alt="pay">
+                    <div class="card-body p-0">
+                        <p class="mb-1"><span id="beneficios-span">2x1</span> en cines</p>
+                        <p class="card-title mb-4" id="beneficios-card-title">Pagando con Personal Pay</p>
+                        <p class="card-text mb-4" id="beneficios-card-text">Todos los días en los Cines Hoyts, Cinemark, Cinemacenter y Cinema Devoto. Además de un %20 de descuento en el Candy.</p>
+                        <p class="card-text pt-4 mb-0 pb-4"><small>Beneficio ilimitado</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 text-center">¿En qué te podemos ayudar?</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-6">
+            <div class="feature col">
+        
+                <a href="#" class="icon-link d-inline-flex align-items-center"><img class="logo" src="Assets/factura.png" alt="logo Factura">
+                  <p class="texto">Dudas sobre facturación</p>
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+            
+                <a href="#" class="icon-link d-inline-flex align-items-center"><img class="logo" src="Assets/sucursal.png" alt="logo Sucursal">
+                   <p class="texto">Contacto y sucursales</p>
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+               
+
+                <a href="#" class="icon-link d-inline-flex align-items-center"><img class="logo" src="Assets/telefono.png" alt="logo Telefono">
+                   <p class="texto">Telefonía fija</p>
+
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+                
+
+                <a href="#" class="icon-link d-inline-flex align-items-center"><img class="logo" src="Assets/corazon.png" alt="logo Corazon">
+                 <p class="texto">Botón de arrepentimiento</p>
+
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+               
+                <a href="#" class="icon-link d-inline-flex align-items-center"><img class="logo" src="Assets/manos.png" alt="logo Mano">
+                  <p class="texto">Baja de servicio</p>
+
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+              
+
+                <a href="#" class="icon-link d-inline-flex align-items-center"><img class="logo" src="Assets/flecha.png" alt="logo Flecha">
+                   <p class="texto">Ir a Ayuda</p>
+
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container-header">
+        <center><h2>¿Tenes dudas sobre Personal?</h2><center>
+     
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Si tengo Internet Personal, ¿se duplica mi velocidad de internet?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    Si ya tenías <strong>Internet Personal</strong> en tu casa para el <strong>03/11/2022</strong>, ahora vas a poder navegar con el <strong>doble de velocidad</strong>. Solo vas a tener que reiniciar tu módem y automaticamente el servicio se actualizará. Este beneficio <strong>no tiene ningún costo adicional</strong>, simplemente por tener contratado Internet vas a potenciar tu servicio. Si querés más detalles, te recomendamos este <a href="https://ayudaysoporte.personal.com.ar/app/answers/detail/a_id/10796">artículo</a> de Ayuda y Soporte.                 </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  ¿Qué es Conexión Total?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    Si tenés <strong>Personal</strong> en el celu y en tu casa, tenés <strong>Conexión Total</strong>. Esto quiere decir que accedés a descuentos exclusivos en tus facturas y <strong>beneficios</strong> para potenciar tu conectividad. Descubrí más sobre <a href="https://www.personal.com.ar/conexion-y-entretenimiento">cómo aprovechar Conexión Total</a>.                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  ¿Cómo puedo gestionar mis servicios?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    Gestioná tus servicios desde la <strong>App Mi Personal</strong> o iniciando sesión en <strong>Mi Cuenta</strong> (desde el menú de está página). Allí vas a poder revisar tus facturas, consumos y encontrar información sobre tus servicios de Internet, Telefonía Móvil, TV y Streaming. Además, podés comprar pases, recargar, activar beneficios y mucho más. Si preferís medios de contacto tradicionales vas encontrar sucursales y teléfonos en la <a href="https://www.personal.com.ar/contacto">página de Contacto. </a>               </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    ¿Qué es Personal Pay?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <strong>Personal Pay</strong> es la <strong>billetera virtual</strong> de Personal que te permite conectarte de una manera simpe y confiable con tu plata. Te da acceso a una cuenta y una tarjeta prepaga <strong>Visa gratis y sin costo de mantenimiento</strong>. Además, vas encontrar descuentos para recargar tu celular, pagar tus servicios, recargas de transporte y mucho más. Descubrí más sobre <a href="https://www.personalpay.com.ar/">Personal Pay</a>, sus beneficios y funcionalidades.                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    ¿Fibertel ahora es Personal?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body">
+                    ¡Exacto! Nos renovamos para ser más simples y brindarte la mejor <strong>conexión adentro y afuera de tu casa</strong>. Ahora Personal te brinda el servicio de internet hogar, con la mejor velocidad. Si antes Fibertel era tu proovedor de internet, no te preocupes, la unificación no implica ninguna tarea para vos.                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="container">
+            <div class="row just w-75 mx-auto">
+              <h2 class="display-6 fs-3 pb-5">Seguinos en nuestras redes</h2>
+      
+              <aside class="col-3 text-center">
+                <a href="#" class="text-dark-emphasis icono-redsocial "
+                  ><i class="fa-brands fa-square-facebook"></i
+                ><p fs->Facebook</p></a>
+              </aside>
+              <aside class="col-3 text-center">
+                <a href="#" class="text-dark-emphasis icono-redsocial"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ><p>Instagram</p></a>
+              </aside>
+              <aside class="col-3 text-center">
+                <a href="#" class="text-dark-emphasis icono-redsocial"
+                  ><i class="fa-brands fa-square-twitter"></i
+                ><p>Twitter</p></a>
+              </aside>
+              <aside class="col-3 text-center">
+                <a href="#" class="text-dark-emphasis icono-redsocial"
+                  ><i class="fa-brands fa-linkedin"></i
+                ><p>Linkedin</p></a>
+              </aside>
+            </div>
+          </div>
+
+<!--telecom-->
+<div class="logtel">
+    <img class="telecom" src="./assets/telecom.jpg.png" alt="logotelecom">
+</div>
+<div class="contetabla">
+    <table class="tablatel">
+        <tr>
+            <th>Internet y movil</th>
+            <th>Tienda</th>
+            <th>Entretenimiento</th>
+            <th>Flow TV</th>
+            <th>Quiero</th>
+        </tr>
+        <tr>
+            <td><a href="">Servicios de internet</a></td>
+            <td><a href="">Tienda Personal</a></td>
+            <td><a href="">Paramount+</a></td>
+            <td><a href="">Servicio de TV</a></td>
+            <td><a href="">Ofertas y combos</a></td>
+        </tr>
+        <tr>
+            <td><a href="">WiFi Pass</a></td>
+            <td><a href="">Samsung</a></td>
+            <td><a href="">Disney+</a></td>
+            <td><a href="">Flow Pass</a></td>
+            <td><a href="">Mejorar mi plan</a></td>
+        </tr>
+        <tr>
+            <td><a href="">Personal Security</a></td>
+            <td><a href="">Motorola</a></td>
+            <td><a href="">Star+</a></td>
+            <td><a href="">Flow Flex</a></td>
+            <td><a href="">Pagar desde casa</a></td>
+        </tr>
+        <tr>
+            <td><a href="">Portabilidad</a></td>
+            <td><a href="">Xiaomi</a></td>
+            <td><a href="">HBO Pack</a></td>
+            <td><a href=""></a></td>
+            <td><a href="">Ayuda y Soporte</a></td>
+        </tr>
+        <tr>
+            <td><a href="">Prepago</a></td>
+            <td><a href="">Celulares liberados</a></td>
+            <td><a href="">Hot Pack</a></td>
+            <td><a href=""></a></td>
+            <td><a href="">Turnos para sucursales</a></td>
+        </tr>
+        <tr>
+            <td><a href="">Planes</a></td>
+            <td><a href="">TV y Smart</a></td>
+            <td><a href="">Pack Fútbol</a></td>
+            <td><a href=""></a></td>
+            <td><a href="">Recargar crédito</a></td>
+        </tr>
+        <tr>
+            <td><a href="">Roaming</a></td>
+            <td><a href="">Accesorios</a></td>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
+            <td><a href="">Personal Pay</a></td>
+        </tr>
+    </table>
+
+</div>
+
+
+
     </main>
-  </body>
+<!-- <footer><img src="./assets/img/foto-footer.png" width="100%" height="auto" alt=""></footer> -->
+
+<footer class="text-white bg-black pb-5">
+    <section class="container">
+      <article class="row text-white">
+        <aside class="col-12 col-md-6 col-lg-3 mt-5">
+          <ul class="list-group">
+            <h5>ACERCA DE</h5>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Compañía</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Inversores</a>
+            </li>
+
+            <li class="list-group-item p-0 bg-black">
+              <a href="./pages/seguridad.html" class="text-white">Prensa</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Ayuda</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">RRHH</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">RSE</a>
+            </li>
+          </ul>
+        </aside>
+        <aside class="col-12 col-md-6 col-lg-3 mt-5">
+          <ul class="list-group">
+            <h5>ASISTENCIA</h5>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Pedido de interferencias</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Conexiones clandestinas</a>
+            </li>
+
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Enacom contacto@enacom.gob.ar</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Ayuda</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Accesibilidad</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Prestación Básica Universal</a>
+            </li>
+          </ul>
+        </aside>
+        <aside class="col-12 col-md-6 col-lg-3 mt-5">
+          <ul class="list-group">
+            <h5>CONFIANZA EN TUS COMPRAS</h5>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white"
+                >Defensa de las y los Consumidores. Para reclamos ingrese
+                aquí</a
+              >
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white"
+                >Política de privacidad de Telecom Argentina S.A.</a
+              >
+            </li>
+
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white"
+                >Contratos de adhesión - Ley N° 24.240 de Defensa del
+                Consumidor</a
+              >
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white"
+                >Reglamento de cliente servicios TIC</a
+              >
+            </li>
+          </ul>
+        </aside>
+        <aside class="col-12 col-md-6 col-lg-3 mt-5">
+          <ul class="list-group">
+            <h5>AYUDA</h5>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Centro de ayuda</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Contacto</a>
+            </li>
+            <li class="list-group-item p-0 bg-black">
+              <a href="#" class="text-white">Arrepentimiento</a>
+            </li>
+            <li class="list-group-item p-0 bg-black  mt-4">                
+              
+              <i class="fa-brands fa-facebook fs-4 "></i>
+              <i class="fa-brands fa-twitter fs-4 mx-2"></i>
+              <i class="fa-brands fa-linkedin fs-4"></i>
+
+            </li>
+          </ul>
+        </aside>
+      </article>
+    </section>      
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
 </html>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-  crossorigin="anonymous"
-></script>

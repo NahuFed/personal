@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.prehead{
+    background-color: #1b1b1d;
+    color: white;
+}
+
+.head{
+    background-color: #121212;
+}
+
+header img{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.no-style{
+    color: white;
+    text-decoration: none;
+}
+
+header .row{
+    background-color: #1b1b1d;
+    color: white;
+}
+/* span{
+    color: whitesmoke;
+} */
+
+nav a {
+    text-decoration: none;
+    background-color: transparent;
+    width: 115px;
+    height: 70px;
+    }
+  
+  .navbar-brand{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .navbar-container {
+      display: flex;
+      gap: 24px;
+      margin: 0 auto;
+      align-items: center;
+  }
+  .fa-solid{
+      margin-bottom: 10px;
+      }
+  
+  .bi-file-earmark-ppt-fill{
+      padding-bottom: 5px;
+  }
+  
+  .light-color:hover{
+      color: grey;
+  }
+  
+  .fa-solid, .fas {
+      font-weight: 900px;
+  }
+  
+  i {
+      font-size: 31px;
+  }
+
+
+  /* style carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  background-image: #000000;
+  padding: 0;
+}
+
+.carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  filter:invert(100) drop-shadow(-1px 4px 5px rgb(115, 113, 113));   
+  border-radius: 50%;
+  padding: 20px;  
+}
+.carousel-indicators{
+  top:350px;
+}
+.carousel .carousel-indicators [data-bs-target] {  
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 1.25rem;
+}
+
+.carousel{
+ margin: 0 15vh;
+}
+
+.carousel .card{  
+  width: 25rem;
+  height: 20rem;  
+  color: white;
+  border-radius: 15px;
+  background-size: cover;
+}
+
+#card_1{
+background-image: url(../assets/unpack-samsung-s23-desk.jpeg);
+}
+#card_2{
+background-image: url(../assets/card-l-home-c3-desk.webp);
+}
+#card_3{
+background-image: url(../assets/home-xl-carrousel-300.jpeg);
+}
+#card_4{
+background-image: url(../assets/duplica-tus-gigas-desktop-carrousel.jpeg);
+}
+.carousel .card-footer, .carousel .card-header{
+  border: none;
+}
+.contenedor-carrusel{
+  background: #eee;
+  padding-top: 3rem;
+  padding-bottom:5rem;
+}
+  
+/* termina style carrusel */
+
+
+.btn-fibertel {
+    background-color: #001036;
+    color: white;
+}
+
+.fs-7 {
+    font-size: 0.6em;
+}
+
+.c-grey {
+    color: #8c8ca1;
+}
+
+.btn-fibertel:hover {
+    background-color: #00356a;
+    color: white;
+}
+
+.a-hover {
+    text-decoration: none;
+}
+
+.a-hover:hover {
+    text-decoration: underline;
+}
+
+.card:hover {
+   box-shadow: 0.18rem 0.18rem 0.18rem 0.18rem rgba(33,37,41, .075);
+}
+
+#beneficios-span { 
+    font-size: 3rem;
+} 
+
+#beneficios-card {
+    border: 1px solid rgb(177, 224, 253);
+    transition: box-shadow .3s;
+}
+
+#beneficios-card:hover {
+    box-shadow: 1px 3px 3px rgb(245, 174, 174);
+    cursor: pointer;
+}
+
+#beneficios-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+#beneficios-card-title {
+    font-size: 1.01rem;
+}
+
+#beneficios-card-text {
+    font-size: 0.9rem;
+}
+
+small {
+    font-size: 0.7rem;
+}
+
+
+
+.feature-col{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.texto{
+    color:black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.texto:hover{
+text-decoration: underline;
+}
+
+.icon-link{
+    text-decoration: none;
+    flex-direction: column;
+}
+
+#featured-3{
+    width: 65%;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    margin-top: 50px;
+}
+.icono-redsocial{
+    display: block;
+    font-size: 3.75rem;
+    text-decoration: none;
+    background: #eee;
+    width: 11.25rem;
+    padding-bottom: 0.1rem;
+}
+
+.icono-redsocial p{
+font-size: 1rem;
+padding-top: 0;
+}
+
+.logtel{
+    background-color: rgb(247, 245,251);
+        
+}
+
+.telecom{
+    display: block;
+    margin: auto;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.contetabla{
+    width: 70%;
+    align-content: center;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10rem;
+}
+
+.tablatel{
+    width: 100%;
+    align-items: center;
+    
+}
+
+.tablatel th {
+    text-align: left;
+    
+}
+   
+a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+footer .list-group li{
+    border: none;
+}
+  footer .list-group li a{
+    text-decoration: none;
+}
+
+footer i{
+
+  color: white;
+}
